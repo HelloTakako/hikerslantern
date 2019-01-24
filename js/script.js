@@ -1,5 +1,4 @@
 // "Animsition"
-// I(Takako) don't write the whole code below, I just copied and pasted codes from a tutorial website and modified only the values to adjust.
 
 $(document).ready(function() {
   $(".animsition").animsition({
