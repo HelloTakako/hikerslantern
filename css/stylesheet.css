@@ -50,7 +50,7 @@ header {
 }
 
 .header_inner {
-  width: 40%;
+  width: 48%;
   margin: 0 auto;
 }
 
@@ -58,7 +58,8 @@ header {
   position: absolute;
   z-index: 0;
   background: url(../images/leather.jpg) no-repeat;
-  height: 120px;
+  width: 56%;
+  max-height: 120px;
   overflow: hidden;
   border-radius: 0 0 30px 30px;
   -webkit-box-shadow: 3px 3px 10px;
@@ -68,7 +69,7 @@ header {
 svg {
   position: relative;
   z-index: 1;
-  height: 80px;
+  width: 16%;
   float: left;
   margin: 18px 0 0 25px;
 }
@@ -116,15 +117,15 @@ svg:hover .lantern {
 /*-- headers --*/
 h1 {
   position: relative;
-  width: 40%;
 }
 
 h1 a {
+  width: 100%;
   position: relative;
   top: 27px;
   left: 19px;
   display: block;
-  font-size: 1.9rem;
+  font-size: 2.9rem;
   line-height: 1;
   text-decoration: none;
   font-family: 'Crimson Text', serif;
