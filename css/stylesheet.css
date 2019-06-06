@@ -31,7 +31,7 @@ body {
 }
 
 .floatright {
-  width: 24%;
+  width: 300px / 1250px / 100%;
   float: right;
 }
 
@@ -352,16 +352,8 @@ img[src="images/4.jpg"] {
   letter-spacing: 0.02em;
 }
 
-.hero_image {
-  height: 400px;
-}
-
 .hero_image img {
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 10px 10px 0 0;
 }
 
 .category .section:first-child {

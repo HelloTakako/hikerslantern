@@ -2,19 +2,19 @@
 
 //Variables
 $color-primary: #7cc189
-$break-large: 1250px
+$break-large: #{$break-large}
 $break-small: 420px
 
 //Mixins
 =fluid-type($min-size,$max-size)
-  font-size: calc($min-size + ($max-size - $min-size) * ((100vw - 1250px) / (1250 - 420)))
+  font-size: calc($min-size + ($max-size - $min-size) * ((100vw - #{$break-large} / (1250 - 420)))
 
 =css3-prefix($prop, $value)
-   -webkit-#$prop: #$value
-   -moz-#$prop: #$value
-   -ms-#$prop: #$value
-   -o-#$prop: #$value
-   #$prop: #$value
+   -webkit-#{$prop}: #{$value}
+   -moz-#{$prop}: #{$value}
+   -ms-#{$prop}: #{$value}
+   -o-#{$prop}: #{$value}
+   #{$prop}: #{$value}
 
 =vertical-center 
    position: relative
@@ -23,8 +23,7 @@ $break-small: 420px
    -webkit-transform: translateY(-50%)
    transform: translateY(-50%)
 
-/* SCSS */
-arrow($direction: down, $size: 5px, $color: #555) 
+=arrow($direction: down, $size: 5px, $color: #555) 
    width: 0
    height: 0
    @if ($direction == left) 
@@ -46,8 +45,6 @@ arrow($direction: down, $size: 5px, $color: #555)
       border-left: $size solid transparent
       border-right: $size solid transparent
       border-bottom: $size solid $color
-   
-
   
 //
 //Common
@@ -79,7 +76,7 @@ body
   float: left
 
 .floatright
-  width: 300px / 1250px * 100%
+  width: 300px / #{$break-large} * 100%
   float: right
 
 .clearfix:after
@@ -97,14 +94,14 @@ header
   border-radius: 0 0 10px 10px
 
 .header_inner
-  width: 600px / 1250px * 100%
+  width: 600px / #{$break-large} * 100%
   margin: 0 auto
 
 .leather_bg
   position: absolute
   z-index: 0
   background: url(../images/leather.jpg) no-repeat
-  width: 700px / 1250px * 100%
+  width: 700px / #{$break-large} * 100%
   max-height: 120px
   overflow: hidden
   border-radius: 0 0 30px 30px
@@ -113,7 +110,7 @@ header
 svg 
   position: relative
   z-index: 1
-  width: 200px / 1250px * 100%
+  width: 200px / #{$break-large} * 100%
   max-height: 100px
   float: left
   margin: 18px 0 0 25px
@@ -157,7 +154,7 @@ h1 a
   top: 27px
   left: 19px / $break-large * 100%
   display: block
-  font-size: calc(2.5rem + (8 - 2.5) * ((100vw - $break-small) / ($break-large - $break-small)))
+  font-size: calc(2.5rem + (8 - 2.5) * ((100vw - #{$break-small}) / (#{$break-large} - #{$break-small})))
   line-height: 1
   text-decoration: none
   font-family: 'Crimson Text', serif
@@ -174,7 +171,7 @@ h1:before
   position: absolute
   color: transparent
   text-shadow: 0 0 10px rgba(60,0,0,.3)
-  left: 105px / 1250px * 100%
+  left: 105px / #{$break-large} * 100%
   top: 21px
 
 h1 a:hover
@@ -294,7 +291,7 @@ small
 //Page contents
 //
 .contents, .contents_center
-  width: 1110px / 1250px * 100%
+  width: 1110px / #{$break-large} * 100%
   min-height: 700px
   height: auto
   background-color: #fff
@@ -327,7 +324,7 @@ small
 //
 
 .index .section img
-  width: 600px / 1250px * 100%
+  width: 600px / #{$break-large} * 100%
   display: block
   padding: 10px
   box-shadow: -2px 3px 3px rgba(0,0,0,.2)
@@ -352,15 +349,8 @@ img[src="images/4.jpg"]
   letter-spacing: 0.02em
 
 .hero_image
-  height: 400px
-
-.hero_image img
-  width: 100%
-  position: absolute
-  top: 0
-  left: 0
-  border-radius: 10px 10px 0 0
-
+  img
+    width: 100%
 
 //
 //category.html
@@ -533,8 +523,8 @@ img[src="images/4.jpg"]
 
 .staffs_blog_main
   float: left
-  width: 810px / 1250px * 100%
-  margin-right: 50px / 1250px * 100%
+  width: 810px / #{$break-large} * 100%
+  margin-right: 50px / #{$break-large} * 100%
 
 .staffs_blog_main a
   color: #333
@@ -669,7 +659,7 @@ img[src="images/4.jpg"]
 //
 
 .about .section 
-  width: 950px / 1250px * 100%
+  width: 950px / #{$break-large} * 100%
   margin: 0 auto
   font-size: 1.8rem
 
@@ -683,7 +673,7 @@ img[src="images/4.jpg"]
   margin: 0 70px 0 0
 
 .company_info
-  width: 460px / 1250px * 100%
+  width: 460px / #{$break-large} * 100%
   font-size: 1.8rem
 
 .company_info dt,.company_info dd
@@ -693,7 +683,7 @@ img[src="images/4.jpg"]
   margin-bottom: 22px
 
 .company_info dt
-  width: 100px / 1250px * 100%
+  width: 100px / #{$break-large} * 100%
   font-weight: bold
   background-color: $color-primary
   color: #fff
@@ -701,7 +691,7 @@ img[src="images/4.jpg"]
   margin-right: 10px
 
 .company_info dd
-  width: 330px / 1250px * 100%
+  width: 330px / #{$break-large} * 100%
 
 .about_text
   margin-top: 80px
