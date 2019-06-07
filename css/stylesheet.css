@@ -50,15 +50,15 @@ header {
 }
 
 .header_inner {
-  width: 48%;
+  width: 50vw;
   margin: 0 auto;
 }
 
 .leather_bg {
   position: absolute;
   z-index: 0;
-  background: url(../images/leather.jpg) no-repeat;
-  width: 56%;
+  background: url(../images/leather.jpg) no-repeat 100%;
+  width: 50vw;
   max-height: 120px;
   overflow: hidden;
   border-radius: 0 0 30px 30px;
@@ -69,7 +69,7 @@ header {
 svg {
   position: relative;
   z-index: 1;
-  width: 16%;
+  width: 6vw;
   max-height: 100px;
   float: left;
   margin: 18px 0 0 25px;
@@ -126,7 +126,7 @@ h1 a {
   top: 27px;
   left: 1.52%;
   display: block;
-  font-size: calc(2.5rem + (8 - 2.5) * ((100vw - $break-small) / ($break-large - $break-small)));
+  font-size: 6vw;
   line-height: 1;
   text-decoration: none;
   font-family: 'Crimson Text', serif;
@@ -145,7 +145,7 @@ h1:before {
   position: absolute;
   color: transparent;
   text-shadow: 0 0 10px rgba(60, 0, 0, 0.3);
-  left: 8.4%;
+  left: 105px / 1250px / 100%;
   top: 21px;
 }
 
@@ -282,7 +282,7 @@ small {
 }
 
 .contents, .contents_center {
-  width: 88.8%;
+  width: 1110px / 1250px / 100%;
   min-height: 700px;
   height: auto;
   background-color: #fff;
@@ -319,7 +319,7 @@ small {
 }
 
 .index .section img {
-  width: 48%;
+  width: 600px / 1250px / 100%;
   display: block;
   padding: 10px;
   -webkit-box-shadow: -2px 3px 3px rgba(0, 0, 0, 0.2);
@@ -552,8 +552,8 @@ img[src="images/4.jpg"] {
 
 .staffs_blog_main {
   float: left;
-  width: 64.8%;
-  margin-right: 4%;
+  width: 810px / 1250px / 100%;
+  margin-right: 50px / 1250px / 100%;
 }
 
 .staffs_blog_main a {
@@ -698,7 +698,7 @@ img[src="images/4.jpg"] {
 }
 
 .about .section {
-  width: 76%;
+  width: 950px / 1250px / 100%;
   margin: 0 auto;
   font-size: 1.8rem;
 }
@@ -716,7 +716,7 @@ img[src="images/4.jpg"] {
 }
 
 .company_info {
-  width: 36.8%;
+  width: 460px / 1250px / 100%;
   font-size: 1.8rem;
 }
 
@@ -728,7 +728,7 @@ img[src="images/4.jpg"] {
 }
 
 .company_info dt {
-  width: 8%;
+  width: 100px / 1250px / 100%;
   font-weight: bold;
   background-color: #7cc189;
   color: #fff;
@@ -737,7 +737,7 @@ img[src="images/4.jpg"] {
 }
 
 .company_info dd {
-  width: 26.4%;
+  width: 330px / 1250px / 100%;
 }
 
 .about_text {

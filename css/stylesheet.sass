@@ -2,12 +2,10 @@
 
 //Variables
 $color-primary: #7cc189
-$break-large: #{$break-large}
+$break-large: 1250px
 $break-small: 420px
 
 //Mixins
-=fluid-type($min-size,$max-size)
-  font-size: calc($min-size + ($max-size - $min-size) * ((100vw - #{$break-large} / (1250 - 420)))
 
 =css3-prefix($prop, $value)
    -webkit-#{$prop}: #{$value}
@@ -94,14 +92,14 @@ header
   border-radius: 0 0 10px 10px
 
 .header_inner
-  width: 600px / #{$break-large} * 100%
+  width: 50vw
   margin: 0 auto
 
 .leather_bg
   position: absolute
   z-index: 0
-  background: url(../images/leather.jpg) no-repeat
-  width: 700px / #{$break-large} * 100%
+  background: url(../images/leather.jpg) no-repeat 100%
+  width: 50vw
   max-height: 120px
   overflow: hidden
   border-radius: 0 0 30px 30px
@@ -110,7 +108,7 @@ header
 svg 
   position: relative
   z-index: 1
-  width: 200px / #{$break-large} * 100%
+  width: 6vw
   max-height: 100px
   float: left
   margin: 18px 0 0 25px
@@ -154,7 +152,7 @@ h1 a
   top: 27px
   left: 19px / $break-large * 100%
   display: block
-  font-size: calc(2.5rem + (8 - 2.5) * ((100vw - #{$break-small}) / (#{$break-large} - #{$break-small})))
+  font-size: 6vw
   line-height: 1
   text-decoration: none
   font-family: 'Crimson Text', serif
