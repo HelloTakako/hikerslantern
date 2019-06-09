@@ -1,49 +1,4 @@
-@charset "UTF-8"
 
-//Variables
-$color-primary: #7cc189
-$break-large: 1250px
-$break-small: 420px
-
-//Mixins
-
-=css3-prefix($prop, $value)
-   -webkit-#{$prop}: #{$value}
-   -moz-#{$prop}: #{$value}
-   -ms-#{$prop}: #{$value}
-   -o-#{$prop}: #{$value}
-   #{$prop}: #{$value}
-
-=vertical-center 
-   position: relative
-   top: 50%
-   -ms-transform: translateY(-50%)
-   -webkit-transform: translateY(-50%)
-   transform: translateY(-50%)
-
-=arrow($direction: down, $size: 5px, $color: #555) 
-   width: 0
-   height: 0
-   @if ($direction == left) 
-      border-top: $size solid transparent
-      border-bottom: $size solid transparent 
-      border-right: $size solid $color
-   
-   @else if ($direction == right) 
-      border-top: $size solid transparent
-      border-bottom: $size solid transparent 
-      border-left: $size solid $color
-   
-   @else if ($direction == down) 
-      border-left: $size solid transparent
-      border-right: $size solid transparent
-      border-top: $size solid $color
-   
-   @else 
-      border-left: $size solid transparent
-      border-right: $size solid transparent
-      border-bottom: $size solid $color
-  
 //
 //Common
 //
@@ -95,8 +50,8 @@ header
   width: 50vw
   margin: 0 auto
   display: grid
-  grid-template-columns: 20% 80%
-  align-items: center
+  grid-template-columns: 15% 80%
+  place-self: center
 
 .leather_bg
   position: absolute
@@ -111,8 +66,7 @@ header
 svg 
   position: relative
   max-height: 100px
-  align-self: center
-  justify-self: center
+  margin-top: 9px
 
 .st0 
   fill: none
@@ -169,7 +123,7 @@ h1
 h1 a
   position: relative
   display: block
-  font-size: 5.5vw
+  font-size: 5.8vw
   line-height: 1
   text-decoration: none
   font-family: 'Crimson Text', serif
@@ -177,6 +131,7 @@ h1 a
   background: -webkit-linear-gradient(top, #fff067 0%,#fff5a6 60%,#eaaa36 66%,#f1da36 100%)
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
+  margin-top: 20px
 
 h1:before
   content: "Hiker's Lantern"
