@@ -18,7 +18,7 @@
           <li><a href="#"><i className="fab fa-youtube"></i></a></li>
         </ul>
       </div>
-      <small>&copy; Hello_Takako</small>
+      <small>2019 &copy; Hello_Takako</small>
     </footer>
   );
   
