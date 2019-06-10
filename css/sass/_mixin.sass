@@ -34,3 +34,7 @@
       border-left: $size solid transparent
       border-right: $size solid transparent
       border-bottom: $size solid $color
+
+@mixin mq
+  @media (max-width: $break-small)
+    @content;
