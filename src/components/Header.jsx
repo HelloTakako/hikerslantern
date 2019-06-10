@@ -48,7 +48,7 @@
         </svg>
       </a>
 
-      <h1><a href="#">Hiker's Lantern</a></h1>
+      <h1><a href="index.html">Hiker's Lantern</a></h1>
       <i className="fas fa-bars" id="gnav-sp-menu"></i>
     </div>
 
