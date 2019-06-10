@@ -1,0 +1,22 @@
+{
+  "name": "hikerslantern",
+  "version": "1.0.0",
+  "description": " Hiker's Lantern website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass css/sass/main.sass css/stylesheet.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HelloTakako/hikerslantern.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HelloTakako/hikerslantern/issues"
+  },
+  "homepage": "https://github.com/HelloTakako/hikerslantern#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

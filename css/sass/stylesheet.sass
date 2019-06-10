@@ -1,17 +1,13 @@
-
 //
 //Common
 //
 *
-  margin: 0
-  padding: 0
+    padding: 0
+    margin: 0
 
 img
   vertical-align: bottom
   max-width: 100%
-
-li
-  list-style: none
 
 body
   background: url(../images/bg.jpg) repeat
@@ -24,13 +20,6 @@ body
   font-family: 'Asap', sans-serif
   padding-bottom: 1px
   margin: 0 auto
-
-.floatleft
-  float: left
-
-.floatright
-  width: 300px / #{$break-large} * 100%
-  float: right
 
 .clearfix:after
   content: ''
@@ -264,7 +253,7 @@ small
   padding: 30px 3vw
   position: relative
   border-radius: 10px
-  @media screen and (min-width: $break-large)
+  @media screen and (max-width: $break-small)
     padding: 0
 
 .contents_center h2
@@ -657,4 +646,3 @@ img[src="images/4.jpg"]
 
 .about_text
   margin-top: 80px
-
