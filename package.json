@@ -4,7 +4,8 @@
   "description": " Hiker's Lantern website",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass css/sass/main.sass css/stylesheet.css --watch"
+    "compile:sass": "node-sass css/sass/main.sass css/stylesheet.css --watch",
+    "compile:jsx": "npx babel --watch src --out-dir js/react/ --presets react-app/prod"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/HelloTakako/hikerslantern#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
     "node-sass": "^4.12.0"
   }
 }

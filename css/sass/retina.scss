@@ -41,7 +41,7 @@ $retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
           left: 100px;
       }
       .header_inner .fas{
-      display: inline-block;
+      display: inline-block !important;
       position: fixed;
       font-size: 50px;
       width:60px;
