@@ -169,27 +169,16 @@
 <!-- end of div#wrapper -->
 
 <!-- start of footer -->
-<footer>
-  <div class="footer_navi">
-    <ul class="clearfix">
-      <li><a href="index.html" class="animsition-link">Home</a></li>
-      <li><a href="category.html" class="animsition-link">Category</a></li>
-      <li><a href="staffs_blog.html" class="animsition-link">Staffs' Blog</a></li>
-      <li><a href="contact.html" class="animsition-link">Contact</a></li>
-      <li><a href="about.html" class="animsition-link">About</a></li>
-    </ul>
-  </div>
-
-  <div class="footer_sns">
-    <ul class="footer_sns_link clearfix">
-      <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-    </ul>
-  </div>
-  <small>&copy; Hello_Takako</small>
-</footer>
+<div id="footer"></div>
 <!-- end of footer -->
+
+<!-- Load React. -->
+<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+
+<!-- Load our React component. -->
+<script src="js/react/Header.js"></script>
+<script src="js/react/Footer.js"></script>
 </body>
 </html>

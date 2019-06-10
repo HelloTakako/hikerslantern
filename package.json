@@ -4,8 +4,8 @@
   "description": " Hiker's Lantern website",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass css/sass/main.sass css/stylesheet.css --watch",
-    "compile:jsx": "npx babel --watch src --out-dir js/react/ --presets react-app/prod"
+    "compile:sass": "node-sass src/sass/main.sass css/stylesheet.css --watch",
+    "compile:jsx": "npx babel --watch src/components/ --out-dir js/react/ --presets react-app/prod"
   },
   "repository": {
     "type": "git",
