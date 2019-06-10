@@ -40,6 +40,7 @@ h2:first-letter {
   background-color: #fff;
   padding: 0 10px;
   z-index: 2;
+  display: block;
   border-bottom: 2px dotted #7cc189; }
 
 h3 {
@@ -373,15 +374,12 @@ img[src="images/4.jpg"] {
   margin-top: 24px; }
 
 .about .section {
-  width: 950px / 1250px / 100%;
   margin: 0 auto;
-  font-size: 1.8rem; }
+  font-size: 1.6rem;
+  display: flex; }
 
 .about .section p {
   text-align: left; }
-
-.google_map, .company_info {
-  float: left; }
 
 .google_map {
   margin: 0 70px 0 0; }
@@ -549,7 +547,7 @@ footer li a {
   border-left: 1px solid #fff;
   display: inline-block;
   padding: 0 10px;
-  font-size: 1.4vw; }
+  font-size: 1.4rem; }
 
 footer li:first-child a {
   border-left: none; }
@@ -561,7 +559,8 @@ footer li a:hover {
   margin-bottom: 30px; }
 
 .footer_sns a {
-  border-left: none; }
+  border-left: none;
+  font-size: 1.8rem; }
 
 small {
   text-align: center;
@@ -612,6 +611,9 @@ small {
     z-index: 11; } }
 
 @media (max-width: 475px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  #wrapper {
+    width: 100vw;
+    overflow: hidden; }
   .contents, .contents_center, #content {
     width: 90vw;
     margin: 0;
@@ -656,7 +658,7 @@ small {
     border-radius: 10px;
     top: 25px;
     right: 25px;
-    z-index: 25; }
+    z-index: 50; }
   .gnavi {
     display: none;
     width: 100vw;
@@ -675,4 +677,22 @@ small {
     font-size: 5rem;
     display: block;
     border-bottom: 5px dotted;
-    margin-bottom: 1vh; } }
+    margin-bottom: 1vh; }
+  footer {
+    padding: 10px 0; }
+    footer small {
+      padding: 0;
+      font-size: 2rem; }
+  .footer_navi, .footer_sns {
+    display: none; }
+  .contents_center h2 {
+    font-size: 4.5rem; }
+  .staffs_blog_sub {
+    display: none; }
+  .pagination {
+    text-align: center; }
+  .pagination li a {
+    font-size: 3rem;
+    margin-right: 10px; }
+  .pagination:before {
+    font-size: 3rem; } }
