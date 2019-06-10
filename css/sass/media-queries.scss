@@ -1,0 +1,50 @@
+@media only screen and (max-width: $break-small){
+  .contents, .contents_center, #content{
+    width: 90vw;
+    margin: 0;
+    padding: 5vw;
+    min-height: 0;
+  }
+  .index .section {
+    display: block;
+  }
+  
+  .header_inner{
+      width: 100vw;
+      display: flex;
+  }
+  .leather_bg{
+      width: 100vw;
+      position: fixed;
+      max-height: 150px;
+      border-radius: 0;
+      z-index: 10;
+  }
+  svg{
+    position: fixed;
+    z-index: 11;
+    top: 20px;
+    left: 30px;
+    text-align: left;
+  }
+  h1 a{
+      font-size: 8vw;
+      z-index: 11;
+      position: fixed;
+      padding: 10px 0 0 30px;
+  }
+  .header_inner .fas{
+  display: inline-block;
+  position: fixed;
+  font-size: 50px;
+  width:60px;
+  color: $color-primary;
+  background-color: $color-white;
+  padding: 20px 25px;
+  text-align: center;
+  border-radius: 10px;
+  top: 25px;
+  right: 25px;
+  z-index: 11;
+  }
+}

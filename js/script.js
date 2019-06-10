@@ -23,3 +23,11 @@ function showSlides(n) {
   }
   //slides[slideIndex-1].style.display = "block";
 }
+
+
+// global navigation toggle
+$(function(){
+  $('#gnav-sp-menu').on('click',function(e){
+    $('.gnavi').toggleClass('gnavi-show');
+  });
+})
