@@ -112,14 +112,14 @@ img[src="images/4.jpg"] {
   justify-content: space-between; }
 
 .category .category_list li {
-  width: 260px;
+  width: 23%;
   margin: 0 0 50px 0; }
 
 .category .category_list li:nth-child(4n) {
   margin-right: none; }
 
 .category .category_list img {
-  width: 260px;
+  width: 100%;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px; }
 
@@ -695,4 +695,10 @@ small {
     font-size: 3rem;
     margin-right: 10px; }
   .pagination:before {
+    font-size: 3rem; }
+  .category .category_list li {
+    width: 47%; }
+  .category .category_list li img {
+    width: 100%; }
+  .category .brands li {
     font-size: 3rem; } }

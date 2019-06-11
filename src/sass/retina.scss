@@ -113,4 +113,14 @@ $retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
       .pagination:before{
           font-size: 3rem;
       }
+      // category
+      .category .category_list li{
+          width:$category-list-sp;
+      }
+      .category .category_list li img{
+        width:100%;
+      }
+      .category .brands li{
+        font-size: 3rem;
+    }
 }
