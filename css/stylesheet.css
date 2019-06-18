@@ -95,7 +95,6 @@ img[src="images/4.jpg"] {
 
 .text1 {
   margin: 20px 0;
-  text-align: justify;
   letter-spacing: 0.02em; }
 
 .hero_image img {
@@ -698,6 +697,9 @@ small {
     display: none; }
   .contents_center h2 {
     font-size: 4.5rem; }
+  .staffs_blog_main {
+    width: 100%;
+    margin: 0; }
   .staffs_blog_sub {
     display: none; }
   .pagination {
