@@ -226,14 +226,18 @@ img[src="images/4.jpg"] {
 
 /* end of w3schools how to tutorial */
 .staffs_blog {
-  display: float; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .staffs_blog h2 {
+    width: 100%; }
 
 .staffs_blog .section {
   text-align: left !important; }
 
 .blog_posts_list > li > a {
   display: block;
-  padding: 20px;
+  padding: 4%;
   background-color: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   transition: .3s;
@@ -244,25 +248,20 @@ img[src="images/4.jpg"] {
 .blog_posts_list > li > a:hover {
   opacity: 0.7; }
 
-.blog_post {
-  display: float; }
-
 .post_wrapper {
   display: block;
   text-align: left; }
 
 .staffs_blog_main {
-  float: left;
-  width: 810px / 1250px / 100%;
-  margin-right: 50px / 1250px / 100%; }
+  width: 70%;
+  margin-right: 5%; }
 
 .staffs_blog_main a {
   color: #333; }
 
 .staffs_blog_sub {
-  float: left;
-  width: 200px;
-  padding: 20px;
+  width: 18%;
+  padding: 2%;
   background-color: #ddd; }
 
 .staffs_blog h3 {
@@ -615,9 +614,9 @@ small {
     width: 100vw;
     overflow: hidden; }
   .contents, .contents_center, #content {
-    width: 90vw;
+    width: 90%;
     margin: 0;
-    padding: 5vw;
+    padding: 5%;
     min-height: 0; }
   .index .section {
     display: block; }
@@ -678,6 +677,18 @@ small {
     display: block;
     border-bottom: 5px dotted;
     margin-bottom: 1vh; }
+  h2 {
+    color: #7cc189;
+    font-size: 2.5rem; }
+  img[src="images/2.jpg"] {
+    width: 50%;
+    float: left;
+    margin: -160px 50px 20px -100px; }
+  img[src="images/3.jpg"] {
+    display: none !important; }
+  img[src="images/4.jpg"] {
+    transform: rotate(0);
+    margin: -3% 5% 5% -3%; }
   footer {
     padding: 10px 0; }
     footer small {

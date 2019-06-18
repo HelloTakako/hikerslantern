@@ -260,14 +260,18 @@ img[src="images/4.jpg"]
 //staffs_blog.html
 //
 .staffs_blog
-  display: float
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  h2
+    width: 100%
 
 .staffs_blog .section
   text-align: left !important
 
 .blog_posts_list>li>a
   display: block
-  padding: 20px
+  padding: 4%
   background-color: #fff
   box-shadow: 0 0 5px rgba(0,0,0,.3)
   transition: .3s
@@ -278,25 +282,20 @@ img[src="images/4.jpg"]
 .blog_posts_list>li>a:hover
   opacity: 0.7
 
-.blog_post
-  display: float
-
 .post_wrapper
   display: block
   text-align: left
 
 .staffs_blog_main
-  float: left
-  width: 810px / #{$break-large} * 100%
-  margin-right: 50px / #{$break-large} * 100%
+  width: 70%
+  margin-right: 5%
 
 .staffs_blog_main a
   color: #333
 
 .staffs_blog_sub
-  float: left
-  width: 200px
-  padding: 20px
+  width: 18%
+  padding: 2%
   background-color: #ddd
 
 .staffs_blog h3

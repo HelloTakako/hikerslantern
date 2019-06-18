@@ -1,14 +1,12 @@
-$retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
-
 @media (max-width: $break-small) and #{$retina} {
     #wrapper {
         width: 100vw;
         overflow: hidden;
     }
     .contents, .contents_center, #content{
-        width: 90vw;
+        width: 90%;
         margin: 0;
-        padding: 5vw;
+        padding: 5%;
         min-height: 0;
       }
       .index .section {
@@ -82,6 +80,25 @@ $retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
           border-bottom: 5px dotted;
           margin-bottom: 1vh;
       }
+
+      // Contents
+      h2{
+          color: $color-primary;
+          font-size: 2.5rem;
+      }
+      img[src="images/2.jpg"]{
+          width: 50%;
+          float: left;
+          margin: -160px 50px 20px -100px;
+      }
+      img[src="images/3.jpg"]{
+        display: none !important;
+      }
+      img[src="images/4.jpg"]{
+        transform: rotate(0);
+        margin: -3% 5% 5% -3%;
+      }
+
       // Footer
       footer{
           padding:10px 0;
