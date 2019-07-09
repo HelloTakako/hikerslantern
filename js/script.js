@@ -1,5 +1,25 @@
-// w3schools Slideshow :
-//https://www.w3schools.com/howto/howto_js_slideshow.asp
+// "Animsition"
+
+$(document).ready(function() {
+  $(".animsition").animsition({
+    inClass               :   'fade-in-up-sm',
+    inDuration            :    1000,
+    linkElement           :   '.animsition-link',
+    loading               :    true,
+    loadingParentElement  :   'div#wrapper',
+    loadingClass          :   'animsition-loading',
+    unSupportCss          : [ 'animation-duration',
+                              '-webkit-animation-duration',
+                              '-o-animation-duration'
+                            ],
+    overlay               :   false,
+    overlayClass          :   'animsition-overlay-slide',
+    overlayParentElement  :   'div#wrapper'
+  });
+});
+
+
+// w3schools Slideshow : https://www.w3schools.com/howto/howto_js_slideshow.asp
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -23,11 +43,3 @@ function showSlides(n) {
   }
   //slides[slideIndex-1].style.display = "block";
 }
-
-
-// global navigation toggle
-$(function(){
-  $('#gnav-sp-menu').on('click',function(e){
-    $('.gnavi').toggleClass('gnavi-show');
-  });
-})
